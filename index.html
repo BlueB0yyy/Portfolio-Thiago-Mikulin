@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Thiago Mikulin</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--Seção de título-->
+    <header>
+    <h1 style="margin-bottom:5px;">Thiago Mikulin</h1>
+    </header>
+
+    <!--Links de navegação-->
+    <nav>
+        <a href="#sobremim">Sobre mim</a>
+        <a href="#formacaoacad">Formação acadêmica</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!--Colocado no hr, pois a nav bar sticky cobre o título se clicar direto-->
+    <hr id="sobremim">
+
+    <!--Seção "Sobre mim"-->
+    <h1>Sobre mim</h1>
+    <section>
+            <p>Meu nome é Thiago Mikulin. Tenho 24 anos e gosto de tecnologia desde pequeno. Sempre tive contato com videogames e, desde que ganhei meu primeiro computador, busquei conhecer sobre o funcionamento das máquinas. Sou professor de inglês, fazendo transição de carreira para a área de tecnologia, na qual busco contribuir com avanços e melhorias para o mundo.</p>
+            <img src="img/20240826_223449.jpg" style="padding-bottom:20px;">
+            <img src="img/BAY07430.JPG" style="max-width: 100%;">
+            <p>Além da tecnologia, também gosto de artes no geral. Faço aula de canto há 6 anos, gosto de aprender como tocar instrumentos diversos e já fiz cursos na área de interpretação e cinema. Acredito que o equilíbrio entre a expressão livre na arte e o empenho em uma profissão lógica, objetiva e direta tenham me tornado uma pessoa capaz de enxergar a beleza em ambos, assim como as facetas menos óbvias da beleza na lógica e da objetividade na arte.</p>
+            <p>Moro com a minha namorada, e temos 4 gatos de estimação chamados Fred, Minty, António e Geraldina. Nós moramos juntos há quase 5 anos. Planejamos ter uma casa com terreno no fundo para que nossos gatos possam aproveitar mais da natureza. Eu tenho muita estima por tudo que construímos nesse tempo juntos e sonho em poder entregar qualidade de vida e estabilidade para minha família.</p>
+            <img src="img/20240504_192231.jpg">
+    </section>
+    <hr id="formacaoacad">
+
+    <!--Seção "Formação acadêmica"-->
+    <h1>Formação acadêmica</h1>
+    <section>
+        <img src="img/271722658_2078275365670932_6442203703278281855_n.jpg" style="width: 100%;">
+        <p>Minha primeira formação acadêmica foi em Letras - Português e Inglês pela FAE Centro Universitário, a qual conclui em 2021. Minha segunda graduação foi em Pedagogia, na FAE Centro Universitário, a qual conclui em 2023. Atualmente, estou em um curso tecnólogo de Análise e Desenvolvimento de Sistemas, pela Uninter.</p>
+        <p>Tenho cursos complementares, como um curso para certificação inglês do TOEFL-ITP, realizado em 2018, um curso de Cinema realizado pelo Centro Europeu e curso de Teatro pelo Lala Schneider.</p>
+    </section>
+    <hr id="portfolio">
+
+    <!--Seção "Portfólio"-->
+    <h1>Portfólio</h1>
+    <section>
+        <a href='Projetos do portfolio/Notas-aula-html/Notas.html'><div class="projeto">
+            <h1>Minhas notas de HTML de um curso prévio</h1>
+        </div></a>
+        <a href='Projetos do portfolio/Notas-aula-CSS/Notas.html'><div class="projeto">
+            <h1>Minhas notas de CSS de um curso prévio</h1>
+        </div></a>
+        <a href='Projetos do portfolio/Notas-aula-javascript/Notas.html'><div class="projeto">
+            <h1>Minhas notas de Javascript de um curso prévio</h1>
+        </div></a>
+        <a href='Projetos do portfolio/projeto_lista_de_tarefas/lista_de_tarefas.html'><div class="projeto">
+            <h1>Projeto não finalizado de lista de tarefas</h1>
+        </div></a>
+
+    </section>
+    <hr id="contato">
+
+    <!--Seção de contato-->
+    <h1>Contato</h1>
+    <article>
+        <br>
+        <form>
+            <!--Input de nome-->
+        <label for="nome">Nome:&nbsp</label>
+        <input type="text" name="nome" id="">
+        <br><br>
+
+        <!--Input de e-mail-->
+        <label for="email">E-mail:&nbsp;</label>
+        <input type="email" name="email">
+        <br><br>
+
+        <!--Input da mensagem-->
+        <label for="msg">Mensagem:</label>
+        <br>
+        <textarea name="msg" id="" cols="50" rows="10"></textarea>
+        <br>
+
+        <!--Botão de envio-->
+        <input type="button" value="Enviar" id="botão">
+        </form>
+    </article>
+</body>
+</html>

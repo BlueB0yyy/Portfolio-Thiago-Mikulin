@@ -1,0 +1,177 @@
+/*Quando o site estiver com width menor que 570px*/
+@media screen and (max-width:570px) {
+    /*Muda menu nav para colunas*/
+    nav{
+        flex-direction: column;
+    }
+
+}
+/*Quando o site estiver com width maior que 1000px*/
+@media screen and (min-width:1000px) {
+    /*Texto menor para ocupar menos espaço de tela*/
+    p{
+        font-size:20px;
+    }
+
+    a{
+        font-size:20px;
+    }
+
+
+}
+/*Quando o site estiver com width maior que 1350px*/
+@media screen and (min-width:1350px) {
+
+    /*Dividido meio a meio*/
+    section{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+    }  
+
+    /*Padding/margins exclusivas exclusivas*/
+    p{
+        padding:20% 0% 10% 0%;
+    }
+
+    article{
+        font-size:30px;
+        margin:1% 10% 5% 10%;
+    }
+
+    /*Width fixo até ficar menor*/
+    input{
+        width:500px;
+        font-size:25px;
+    }
+
+    textarea, input{
+        font-size:30px
+    }
+
+
+}
+/*Quando o site estiver com width menor que 1350px*/
+@media screen and (max-width:1350px) {
+    /*Reconfiguração das colunas*/
+    section{
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    p{
+        padding:5% 0% 5% 0%;
+    }
+
+    article{
+        font-size:25px;
+        margin:1% 10% 5% 10%;
+    }
+
+    /*Largura adaptável e fonte menor*/
+    textarea, input{
+        width:100%;
+        font-size:25px
+    }
+
+}
+
+/*Aspectos gerais do site*/
+*{
+    border:none;
+    box-sizing: border-box;
+    margin:0;
+}
+
+/*Links sem underline*/
+a{
+    text-decoration: none;
+}
+
+/*Links depois de clicados mantém a cor azul*/
+a:visited{
+    color:blue;
+}
+
+/*Cabeçalho com o título*/
+header{
+    display:flexbox;
+    text-align: center;
+    background-color: blue;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-bottom: 5px;;
+    color:white;
+}
+
+/*Menu de navegação, sticky para facilitar acesso*/
+nav{
+    display:flex;
+    justify-content: space-between;
+    position:sticky;
+    margin-top:10px;
+    top:0;
+    background-color: white;
+    margin-left:15px;
+    margin-right: 15px;
+    margin-bottom:10px;
+}
+
+/*Os links dentro do menu*/
+nav a{
+    padding:5px 20px 5px 20px;
+    border:5px solid blue;
+    min-width: 20%;
+    text-align: center;
+}
+
+/*Linhas de divisão*/
+hr{
+    border:1px solid blue
+}
+
+/*Section (pai) com display grid*/
+section{
+    margin:15px;
+    display:grid;
+}
+
+/*Parágrafos*/
+p{
+    font-size:30px;
+    /*Top, right, bottom, left */
+    margin: 0% 10% 0% 10%;
+}
+
+/*Imagens*/
+img{
+    display:block;
+    margin: auto auto auto auto;
+    max-width:45%;
+    min-width:100px;
+    width:fit-content;
+}
+
+/*Borda dos inputs e textareas*/
+input, textarea{
+    border: 1px solid blue;
+    width:100%;
+}
+
+/*Título (caracterizado fora das sections para não herdar dos pais*/
+h1{
+    text-align: center;
+    margin-top:2%;
+}
+
+/*Customização padrão dos links de projetos*/
+.projeto{
+    border:1px solid blue;
+    margin:1% 10% 1% 10%;
+}
+
+/*Alteração do input quando o mouse estiver em cima*/
+#botão:hover{
+    cursor: pointer;
+    background-color: blue;
+    color:white;
+}
